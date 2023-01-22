@@ -1,0 +1,261 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(90, 129, 90);
+    backdrop-filter: blur(5px);
+
+    box-shadow: inset 45px 35px 35px rgb(72, 94, 72), inset -45px -35px  35px rgb(72, 94, 72);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 77px;
+    justify-content: space-between;
+    /* box-shadow: inset 45px 35px 35px rgb(79, 102, 79), inset -45px -35px  35px rgb(79, 102, 79); */
+    /* border: 3px solid red; */
+    /* z-index: 2; */
+    padding: 25px 25px;
+    position: fix;
+    
+    
+}
+
+
+.logo{
+    display: flex;
+    letter-spacing: 0.4em;
+    font-size: 3rem;
+    color: rgb(2, 37, 2);   
+} 
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 265px;
+    color: #707070;
+}
+
+
+nav ul{
+    display: flex;
+    gap: 54px;
+    color: rgb(2, 37, 2);
+    font-size: 1rem;
+
+}
+
+nav ul li{
+    cursor: pointer;
+    display:block;
+    padding-bottom: 5px ;
+}
+
+
+
+nav ul li:hover{
+    box-shadow: inset 0px -3px 0 0 black;
+}
+
+/* ჰედერის ელემენტებზე დაწკაპების შემდგომ ფერი */
+nav ul li:active{
+    background-color: rgb(8, 107, 74);
+}
+
+
+
+
+
+
+
+ /* ---------- 1 section one  ---------- */
+
+
+
+
+ .section1{
+    display: flex;
+    /* border: 3px solid blue; */
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    display: flex;
+ }
+
+
+
+ .sectionitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 176px 99px 176px 140px;
+
+ }
+
+
+
+ .sec_img{
+        /* border: 2px solid purple; */
+        background-image: url(../images/section1nature.png);
+        background-size: cover;
+        
+    
+ }
+
+
+
+ .sec_card{
+  background-color: rgba(0,0,0, 0.3);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  line-height: 20px;
+
+  margin-top:20px;
+
+}
+ 
+ .section1 h2{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 17px;
+
+ }
+
+
+
+ .line{
+    margin: 15px 0px;
+    display: inline-block;
+    height: 2px;
+    border-top: 3px solid white;
+    width: 80%;
+ }
+
+ .sec_card button{
+   margin-top: 20px;
+   background-color: rgba(105, 141, 114,  1);
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.sec_card button:hover{
+    background-color: rgba(105, 141, 114,  0.7);
+ 
+}
+
+
+
+
+
+/* --------  section 1 right side ----------------- */
+
+
+.sec_right h3{
+
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.h4_h5{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.sec_right p{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px 15px;   
+}
+
+.minicon{
+    font-size: 8px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+
+
+/* ------------ article ----------------- */
+
+
+
+article{
+    margin:0 auto;
+    width: 80%; 
+    height: 440px; 
+    /* border: 2px solid red; */
+    margin: 35px auto;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 35PX;
+}
+
+
+.cards{
+    margin-top: 35px;
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    color: white;
+    /* border: 2px solid red; */
+    
+                      
+}
+
+.card{
+   
+    /* border: 2px solid red; */
+    box-shadow: 0px 2px 4px rgb(0, 32, 26);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 340px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.cardimg {
+    transform: scale(1);
+    width: 345px;
+    height: 170px;
+    
+}
+
+.card:hover img{
+    transform: scale(2);
+    filter: grayscale(100%);
+    transition: all 3s;
+}
+
+
+.card h1{
+    
+    width: 95%;
+    font-size: 16px;
+    padding: 35px 0 15px 20px;
+    font-weight: bold;
+}
+
+article p{
+    font-size: 13px;
+    padding: 1px 0 15px 20px;
+}
