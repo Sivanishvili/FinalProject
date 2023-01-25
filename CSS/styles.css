@@ -202,7 +202,8 @@ article{
     height: 440px; 
     border: 2px solid blue;
     margin: 35px auto;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
     color: white;
     margin-bottom: 35PX;
 }
@@ -253,12 +254,12 @@ article{
     width: 95%;
     font-size: 16px;
     padding: 35px 0 15px 20px;
-    font-weight: bold;
 }
 
 article p{
     font-size: 13px;
     padding: 1px 0 15px 20px;
+    font-weight: normal;
 }
 
 
@@ -267,25 +268,97 @@ article p{
 /* -------------- section 2 ------------------  */
 
 .section2{
-    width: 100%;
+    margin: 0 auto;
     border: 3px solid red;
-    display: flex;
-}
-
-.section2 h1{
-    margin: 30px 0 20px 145px;
+    width: 80%;
+    height: 900px;
     color: white;
 }
 
-.leftimg1{
-    width: 60%;
+.section2 h1{
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid black;
 }
 
 
+
+ /* ---------------- section 2 left - 1 img ------------- */
+
+
+ 
+
+.leftimgs{
+    width: 60%;
+    margin-top: 35px;
+    border: 2px solid wheat;
+    height: 800px;
+    border-radius: 7px;
+}
 
 .sec2img1{
     background-image: url(../images/section2photo1.png);
-    height: 200px;
     width: 100%;
+    height: 380px;
+    margin-bottom: 35px;
 }
 
+
+
+
+
+.sec2_text1{
+    padding: 35px 0 35px 15px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.sec2_text1 h3{
+    padding-top: 230px;
+    font: 24px;
+}
+.sec2_text1 p{
+    padding-top: 15px ;
+    font-weight: normal;
+}
+
+
+/* ---------------- section 2 left - 2 img ------------- */
+
+.sec2img2{
+
+    background-image: url(../images/section2photo2.png);
+    width: 100%;
+    height: 380px;
+}
+
+
+
+
+/* ---------------- section 2 right img -------------- */
+
+.section2right{
+    border: 2px solid gray;
+    width: 40%;
+
+}
+
+
+.cards2{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    color:black;
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
+}
+
+.card2{
+    border: 3px solid blue;
+    display: flex;
+    flex-direction: column;
+}
