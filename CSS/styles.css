@@ -244,7 +244,7 @@ article{
 .card:hover img{
     transform: scale(2);
     filter: grayscale(100%);
-    transition: all 3s;
+    transition: all 7s;
 }
 
 
