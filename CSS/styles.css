@@ -269,7 +269,7 @@ article p{
 
 .section2{
     margin: 0 auto;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 80%;
     height: 900px;
     color: white;
@@ -279,21 +279,26 @@ article p{
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
+
 
 
 
  /* ---------------- section 2 left - 1 img ------------- */
 
 
- 
+ .section2left_images{
+    width: 65%;
+    float: left;
+    height: 800px;
+ }
 
 .leftimgs{
-    width: 60%;
+
     margin-top: 35px;
-    border: 2px solid wheat;
-    height: 800px;
+    /* border: 2px solid wheat; */
+    
     border-radius: 7px;
 }
 
@@ -303,8 +308,6 @@ article p{
     height: 380px;
     margin-bottom: 35px;
 }
-
-
 
 
 
@@ -337,28 +340,38 @@ article p{
 
 
 
-/* ---------------- section 2 right img -------------- */
+/* ---------------- section 2 right imgs -------------- */
 
-.section2right{
-    border: 2px solid gray;
-    width: 40%;
-
-}
-
-
-.cards2{
-    border: 2px solid red;
-    display: flex;
+.section2right_images{
+    /* border: 2px solid black; */
+    width: 35%;
+    float: right;
+    height: 800px;
+    margin-top: 35px;
     flex-direction: column;
-    width: 30%;
-    height: 250px;
-    color:black;
     font-weight: bold;
-    margin: 20px 20px 20px 20px;
+   
+    
 }
+
 
 .card2{
-    border: 3px solid blue;
-    display: flex;
-    flex-direction: column;
+    
+    height: 265px;
+    /* border: 3px solid blue; */
+    margin-left: 35px;
+    border-radius: 7px;
+}
+
+.card2 img{
+    width: 100%;
+    height: 230px;
+    padding-top: 10px;
+    /* border: 2px solid red; */
+}
+
+.card2 h2{
+    /* border: 2px solid yellow; */
+    font-size: 16px;
+    margin-top: 15px;
 }
