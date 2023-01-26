@@ -2,8 +2,8 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-color:  #735846;
-    box-shadow: inset 45px 35px 35px rgb(72, 94, 72), inset -45px -35px 35px rgb(72, 94, 72);
+    background-color:  #685a50;
+    box-shadow: inset 15px 15px 15px rgb(25, 33, 25), inset -15px -15px 15px rgb(25, 33, 25 );
     border-radius: 5px;
 
 }
@@ -22,8 +22,8 @@ header {
     padding: 25px 25px;
     color: black;
     font-weight: bold;
-
-
+    margin-bottom: 30px;
+    box-shadow: 1px 3px 30px -3px  #544d4d;
 
 }
 
@@ -94,9 +94,9 @@ nav ul li:hover {
     box-shadow: inset 0px -3px 0 0 black;
 }
 
-/* ჰედერის ელემენტებზე დაწკაპების შემდგომ ფერი */
+
 nav ul li:active {
-    background-color: rgb(115, 115, 5);
+    background-color:  #7e6b5e;
 }
 
 
@@ -104,14 +104,14 @@ nav ul li:active {
 
 .section1 {
     border-radius: 5px;
-    display: flex;
-    border: 3px solid blue;
-    width: 100%;
+    margin: 0 auto;
+    /* border: 3px solid blue; */
+    width: 80%;
     height: 500px;
     align-items: center;
     display: flex;
-    background-color: rgb(55, 73, 55);
-    box-shadow: inset 25px 15px 25px rgb(40, 48, 40), inset -25px -15px 25px rgb(40, 48, 40);
+    /* background-color: rgb(55, 73, 55); */
+    box-shadow: inset 215px 15px 25px rgb(40, 48, 40), inset -25px -15px 25px rgb(40, 48, 40);
 
 }
 
@@ -144,7 +144,7 @@ nav ul li:active {
 
 
 form{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 280px;
     width: 30%;
     margin: 0 auto;
@@ -153,60 +153,143 @@ form{
 
 .forms{
     flex-wrap: wrap;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 75px;
-    margin: 42px 10px 30px 10px;
+    margin: 25px 10px 30px 10px;
 }
 
 .forms p{
-    padding-bottom: 15px;
-    color: white;
+    padding-bottom: 10px;
+    color: rgb(209, 199, 199);
     font-size: 20px;
     font-weight: bold;
 
 }
 
-.forms input{}
-
+.forms input{
+    width: 70%;
+    height: 40PX;
+    /* background-color: #9c7358; */
+}
 
 .forms button{
     margin-top: 30px;
+    background-color: rgb(88 96 100);
+    width: 30%;
+    height: 35px;
+
+}
+
+
+.forms button:hover{
+    background-color:  #605247;
+}
+
+
+
+/* ----------------- article ------------------ */
+
+article {
+    margin: 0 auto;
+    width: 80%;
+    height: 251x;
+    /* border: 2px solid blue; */
+    margin: 35px auto;
+    color: rgb(209, 199, 199);
+    margin-bottom: 35PX;
+}
+
+
+.cards {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid  #937e70;
+    border-bottom: 2px solid  #937e70;
+    /* border: 3px solid black; */
+
+}
+
+.card {
+    margin:20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    padding: 10px 15px;
+    /* border: 2px solid red; */
+    height: 172px;
+    width: 30%;
+    
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.card h1{
+    padding-top: 30px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+article p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 17px;
+   
 }
 
 
 
 
 
+/* --------------- section 2 ------------------ */
+
+.section2{
+   margin: 0 auto;
+   width: 80%;
+   box-shadow: inset 11px 11px 11px rgb(40, 48, 40), inset -11px -11px 11px rgb(40, 48, 40);
+    height: 831px;
+border-radius: 7px;
+margin-bottom: 30px;
+}
 
 
+.sec2img{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 97%;
+    /* border: 3px solid red; */
+}
+.section2 img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+
+.section2text{
+    /* border: 3px solid red; */
+    margin: 80px 20px 41px 20px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 
 
+  
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section2text div{
+    margin-bottom: 30px;
+}
 
 
 /* --------------- footer -------------------- */
@@ -214,11 +297,12 @@ form{
 footer {
     width: 100%;
     height: 180px;
-    padding: 60px 70px 50px 70px;
+    /* background-color: rgb(46, 64, 46); */
+    padding: 60px 150px 50px 150px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-
+    box-shadow: 0px 0px 0px  #544d4d, 0px -3px 20px  #544d4d;
 }
 
 .flogo {
@@ -242,7 +326,9 @@ footer {
 
 
 .icons {
+    /* border: 2px solid beige; */
     display: flex;
     justify-content: space-between;
     gap: 20px;
+   
 }
