@@ -2,7 +2,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(69, 103, 69);
+    background-color: rgb(62, 94, 62);
     box-shadow: inset 45px 35px 35px rgb(72, 94, 72), inset -45px -35px 35px rgb(72, 94, 72);
     border-radius: 5px;
 
@@ -256,7 +256,7 @@ article {
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: rgb(76, 108, 76);
+    background-color: rgb(78, 110, 78);
 }
 
 .cardimg {
@@ -298,6 +298,7 @@ article p {
     width: 80%;
     height: 900px;
     color: white;
+    
 }
 
 .section2 h1 {
@@ -317,6 +318,7 @@ article p {
     width: 65%;
     float: left;
     height: 800px;
+    
 }
 
 .leftimgs {
