@@ -1,0 +1,248 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:  #735846;
+    box-shadow: inset 45px 35px 35px rgb(72, 94, 72), inset -45px -35px 35px rgb(72, 94, 72);
+    border-radius: 5px;
+
+}
+
+
+
+/* ---------------- header ---------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 77px;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+    padding: 25px 25px;
+    color: black;
+    font-weight: bold;
+
+
+
+}
+
+
+.logo {
+    display: flex;
+    letter-spacing: 0.3em;
+    font-size: 3rem;
+    color: rgb(2, 37, 2);
+    animation: beat 2s linear infinite;
+
+}
+
+@keyframes beat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-in-out;
+    }
+
+    15% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in;
+
+    }
+
+    30% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    55% {
+        transform: scale(1.05);
+        animation-timing-function: ease-in;
+    }
+
+    75% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 265px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 54px;
+    font-size: 1rem;
+
+}
+
+nav ul li {
+    cursor: pointer;
+    display: block;
+    padding-bottom: 5px;
+}
+
+
+
+nav ul li:hover {
+    box-shadow: inset 0px -3px 0 0 black;
+}
+
+/* ჰედერის ელემენტებზე დაწკაპების შემდგომ ფერი */
+nav ul li:active {
+    background-color: rgb(115, 115, 5);
+}
+
+
+/* ------------- section 1 --------------- */
+
+.section1 {
+    border-radius: 5px;
+    display: flex;
+    border: 3px solid blue;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    background-color: rgb(55, 73, 55);
+    box-shadow: inset 25px 15px 25px rgb(40, 48, 40), inset -25px -15px 25px rgb(40, 48, 40);
+
+}
+
+.sectionitems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+
+}
+
+
+
+.sec_img {
+    /* border: 2px solid purple; */
+    background-image: url(../images/contactsection1.png);
+    background-size: cover;
+    border-radius: 5pxpx;
+
+}
+
+
+
+/* --------  section 1 right side ----------------- */
+
+
+
+form{
+    border: 2px solid green;
+    height: 280px;
+    width: 30%;
+    margin: 0 auto;
+
+}
+
+.forms{
+    flex-wrap: wrap;
+    border: 2px solid black;
+    height: 75px;
+    margin: 42px 10px 30px 10px;
+}
+
+.forms p{
+    padding-bottom: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.forms input{}
+
+
+.forms button{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- footer -------------------- */
+
+footer {
+    width: 100%;
+    height: 180px;
+    padding: 60px 70px 50px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.flogo {
+    color: rgb(196, 188, 188);
+    letter-spacing: 7px;
+}
+
+
+.left {
+    /* border: 3px solid black; */
+    display: flex;
+    gap: 50px;
+    color: rgb(146, 138, 138);
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+
+
+
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

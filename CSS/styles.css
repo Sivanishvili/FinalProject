@@ -8,6 +8,8 @@
 
 }
 
+/* ---------- header ------------- */
+
 header {
     display: flex;
     align-items: center;
@@ -16,9 +18,9 @@ header {
     justify-content: space-between;
     /* border: 3px solid red; */
     padding: 25px 25px;
-    position: fix;
     color: black;
     font-weight: bold;
+   
 
 
 }
@@ -30,6 +32,7 @@ header {
     font-size: 3rem;
     color: rgb(2, 37, 2);
     animation: beat 2s linear infinite;
+
 }
 @keyframes beat {
     from{
