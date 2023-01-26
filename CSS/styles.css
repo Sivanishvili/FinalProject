@@ -1,70 +1,90 @@
-.container{
+.container {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(90, 129, 90);
-    backdrop-filter: blur(5px);
-
-    box-shadow: inset 45px 35px 35px rgb(72, 94, 72), inset -45px -35px  35px rgb(72, 94, 72);
+    background-color: rgb(69, 103, 69);
+    box-shadow: inset 45px 35px 35px rgb(72, 94, 72), inset -45px -35px 35px rgb(72, 94, 72);
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
 
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     width: 100%;
     height: 77px;
     justify-content: space-between;
-    /* box-shadow: inset 45px 35px 35px rgb(79, 102, 79), inset -45px -35px  35px rgb(79, 102, 79); */
     /* border: 3px solid red; */
-    /* z-index: 2; */
     padding: 25px 25px;
     position: fix;
-    
-    
+    color: black;
+    font-weight: bold;
+
+
 }
 
 
-.logo{
+.logo {
     display: flex;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
     font-size: 3rem;
-    color: rgb(2, 37, 2);   
-} 
+    color: rgb(2, 37, 2);
+    animation: beat 2s linear infinite;
+}
+@keyframes beat {
+    from{
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-in-out;
+    }
+    15%{ transform: scale(1.1);
+        animation-timing-function: ease-in;
+
+    }
+    30%{
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    55%{
+        transform: scale(1.05);
+        animation-timing-function: ease-in;
+    }
+    75%{
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
 
 
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     gap: 265px;
-    color: #707070;
 }
 
 
-nav ul{
+nav ul {
     display: flex;
     gap: 54px;
-    color: rgb(2, 37, 2);
     font-size: 1rem;
 
 }
 
-nav ul li{
+nav ul li {
     cursor: pointer;
-    display:block;
-    padding-bottom: 5px ;
+    display: block;
+    padding-bottom: 5px;
 }
 
 
 
-nav ul li:hover{
+nav ul li:hover {
     box-shadow: inset 0px -3px 0 0 black;
 }
 
 /* ჰედერის ელემენტებზე დაწკაპების შემდგომ ფერი */
-nav ul li:active{
+nav ul li:active {
     background-color: rgb(8, 107, 74);
 }
 
@@ -74,23 +94,26 @@ nav ul li:active{
 
 
 
- /* ---------- 1 section one  ---------- */
+/* ---------- 1 section one  ---------- */
 
 
 
 
- .section1{
+.section1 {
+    border-radius: 5px;
     display: flex;
     /* border: 3px solid blue; */
     width: 100%;
     height: 500px;
     align-items: center;
     display: flex;
- }
+    background-color: rgb(55, 73, 55);
+    box-shadow: inset 25px 15px 25px rgb(40, 48, 40), inset -25px -15px 25px rgb(40, 48, 40);
+}
 
 
 
- .sectionitems{
+.sectionitems {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,63 +121,64 @@ nav ul li:active{
     height: 100%;
     padding: 176px 99px 176px 140px;
 
- }
+}
 
 
 
- .sec_img{
-        /* border: 2px solid purple; */
-        background-image: url(../images/section1nature.png);
-        background-size: cover;
-        
-    
- }
-
-
-
- .sec_card{
-  background-color: rgba(0,0,0, 0.3);
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  justify-content: center;
-  width: 100%;
-  padding: 15px;
-  text-align: center;
-  line-height: 20px;
-
-  margin-top:20px;
+.sec_img {
+    /* border: 2px solid purple; */
+    background-image: url(../images/section1nature.png);
+    background-size: cover;
+    border-radius: 5pxpx;
 
 }
- 
- .section1 h2{
+
+
+
+.sec_card {
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    line-height: 20px;
+
+    margin-top: 20px;
+
+}
+
+.section1 h2 {
     padding-bottom: 10px;
     font-weight: bold;
     font-size: 17px;
 
- }
+}
 
 
 
- .line{
+.line {
     margin: 15px 0px;
     display: inline-block;
     height: 2px;
     border-top: 3px solid white;
     width: 80%;
- }
+}
 
- .sec_card button{
-   margin-top: 20px;
-   background-color: rgba(105, 141, 114,  1);
+.sec_card button {
+    margin-top: 20px;
+    background-color: rgba(105, 141, 114, 1);
     color: whitesmoke;
     cursor: pointer;
     padding: 5px 15px;
 }
 
-.sec_card button:hover{
-    background-color: rgba(105, 141, 114,  0.7);
- 
+.sec_card button:hover {
+    background-color: rgba(105, 141, 114, 0.7);
+
 }
 
 
@@ -164,7 +188,7 @@ nav ul li:active{
 /* --------  section 1 right side ----------------- */
 
 
-.sec_right h3{
+.sec_right h3 {
 
     font-size: 20px;
     color: white;
@@ -172,19 +196,19 @@ nav ul li:active{
 }
 
 
-.h4_h5{
+.h4_h5 {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 15px;
 }
 
-.sec_right p{
+.sec_right p {
     font-size: 15px;
     font-weight: bold;
-    padding: 20px 15px;   
+    padding: 20px 15px;
 }
 
-.minicon{
+.minicon {
     font-size: 8px;
     font-style: italic;
     letter-spacing: 2px;
@@ -196,10 +220,10 @@ nav ul li:active{
 
 
 
-article{
-    margin:0 auto;
-    width: 80%; 
-    height: 440px; 
+article {
+    margin: 0 auto;
+    width: 80%;
+    height: 440px;
     /* border: 2px solid blue; */
     margin: 35px auto;
     font-size: 25px;
@@ -209,20 +233,20 @@ article{
 }
 
 
-.cards{
+.cards {
     margin-top: 35px;
-    width: 100%; 
-    display: flex; 
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     color: white;
     /* border: 2px solid red; */
-    
-                      
+
+
 }
 
-.card{
-   
+.card {
+
     /* border: 2px solid red; */
     box-shadow: 0px 2px 4px rgb(0, 32, 26);
     border-radius: 20px;
@@ -232,6 +256,7 @@ article{
     display: flex;
     flex-direction: column;
     text-align: left;
+    background-color: rgb(76, 108, 76);
 }
 
 .cardimg {
@@ -239,24 +264,24 @@ article{
     width: 345px;
     height: 170px;
     overflow: hidden;
-    
+
 }
 
-.card:hover img{
+.card:hover img {
     transform: scale(2);
     filter: grayscale(100%);
-    transition: all 7s;
+    transition: all 5s;
 }
 
 
-.card h1{
-    
+.card h1 {
+
     width: 95%;
     font-size: 16px;
     padding: 35px 0 15px 20px;
 }
 
-article p{
+article p {
     font-size: 13px;
     padding: 1px 0 15px 20px;
     font-weight: normal;
@@ -267,7 +292,7 @@ article p{
 
 /* -------------- section 2 ------------------  */
 
-.section2{
+.section2 {
     margin: 0 auto;
     /* border: 3px solid red; */
     width: 80%;
@@ -275,7 +300,7 @@ article p{
     color: white;
 }
 
-.section2 h1{
+.section2 h1 {
     align-items: center;
     font-size: 24px;
     font-weight: bold;
@@ -285,24 +310,24 @@ article p{
 
 
 
- /* ---------------- section 2 left - 1 img ------------- */
+/* ---------------- section 2 left - 1 img ------------- */
 
 
- .section2left_images{
+.section2left_images {
     width: 65%;
     float: left;
     height: 800px;
- }
+}
 
-.leftimgs{
+.leftimgs {
 
     margin-top: 35px;
     /* border: 2px solid wheat; */
-    
+
     border-radius: 7px;
 }
 
-.sec2img1{
+.sec2img1 {
     background-image: url(../images/section2photo1.png);
     width: 100%;
     height: 380px;
@@ -311,26 +336,27 @@ article p{
 
 
 
-.sec2_text1{
+.sec2_text1 {
     padding: 35px 0 35px 15px;
     font-size: 16px;
     font-weight: bold;
 
 }
 
-.sec2_text1 h3{
+.sec2_text1 h3 {
     padding-top: 230px;
     font: 24px;
 }
-.sec2_text1 p{
-    padding-top: 15px ;
+
+.sec2_text1 p {
+    padding-top: 15px;
     font-weight: normal;
 }
 
 
 /* ---------------- section 2 left - 2 img ------------- */
 
-.sec2img2{
+.sec2img2 {
 
     background-image: url(../images/section2photo2.png);
     width: 100%;
@@ -342,7 +368,7 @@ article p{
 
 /* ---------------- section 2 right imgs -------------- */
 
-.section2right_images{
+.section2right_images {
     /* border: 2px solid black; */
     width: 35%;
     float: right;
@@ -350,26 +376,26 @@ article p{
     margin-top: 35px;
     flex-direction: column;
     font-weight: bold;
-   
-    
+
+
 }
 
 
-.card2{
-    
+.card2 {
+
     height: 265px;
     /* border: 3px solid blue; */
     margin-left: 35px;
     border-radius: 7px;
 }
 
-.card2 img{
+.card2 img {
     width: 100%;
     height: 220px;
     /* border: 2px solid red; */
 }
 
-.card2 h2{
+.card2 h2 {
     /* border: 2px solid yellow; */
     font-size: 16px;
     padding-top: 15px;
@@ -384,7 +410,7 @@ article p{
 /* ----------------- footer ---------------- */
 
 
-footer{
+footer {
     width: 100%;
     height: 180px;
     background-color: rgb(46, 64, 46);
@@ -392,15 +418,16 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  
+
 }
-.flogo{
+
+.flogo {
     color: rgb(196, 188, 188);
     letter-spacing: 7px;
 }
 
 
-.left{
+.left {
     /* border: 3px solid black; */
     display: flex;
     gap: 50px;
@@ -408,19 +435,14 @@ footer{
     font-weight: bold;
     font-size: 13px;
     line-height: 15px;
-    
-   
+
+
 
 }
 
 
-.icons{
+.icons {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-
-
-
-
-
