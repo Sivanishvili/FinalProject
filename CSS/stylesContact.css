@@ -111,7 +111,7 @@ nav ul li:active {
     align-items: center;
     display: flex;
     /* background-color: rgb(55, 73, 55); */
-    box-shadow: inset 215px 15px 25px rgb(40, 48, 40), inset -25px -15px 25px rgb(40, 48, 40);
+    box-shadow: inset 25px 15px 25px rgb(40, 48, 40), inset -25px -15px 25px rgb(40, 48, 40);
 
 }
 
@@ -133,7 +133,7 @@ nav ul li:active {
     /* border: 2px solid purple; */
     background-image: url(../images/contactsection1.png);
     background-size: cover;
-    border-radius: 5pxpx;
+    border-radius: 5px;
 
 }
 
@@ -192,11 +192,12 @@ form{
 article {
     margin: 0 auto;
     width: 80%;
-    height: 251x;
     /* border: 2px solid blue; */
     margin: 35px auto;
     color: rgb(209, 199, 199);
-    margin-bottom: 35PX;
+    margin-bottom: 35px;
+    border-top: 2px solid  #937e70;
+    border-bottom: 2px solid  #937e70;
 }
 
 
@@ -205,11 +206,28 @@ article {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-top: 2px solid  #937e70;
-    border-bottom: 2px solid  #937e70;
     /* border: 3px solid black; */
-
 }
+
+.avatar{
+    padding: 10px 15px;
+    /* border: 2px solid red; */
+    height: 172px;
+    width: 35%;
+    margin:20px 0 20px 0;
+}
+
+.card-avatar h1{
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 24px;
+}
+.card-avatar img{
+    width: 15%;
+    height: 15%;
+}
+
 
 .card {
     margin:20px 0 20px 0;
@@ -218,24 +236,19 @@ article {
     justify-content: flex-start;
     position: relative;
     padding: 10px 15px;
-    /* border: 2px solid red; */
+    /* border: 2px solid rgb(46, 26, 26); */
     height: 172px;
-    width: 30%;
+    width: 35%;
     
 }
 
-.card img {
-    width: 50px;
-    height: 50px;
-
+.card-avatar img{
+    width: 55px;
+    height: 55px;
 }
 
-.card h1{
-    padding-top: 30px;
-    color: black;
-    font-size: 24px;
-    font-weight: bold;
-}
+
+
 
 article p {
     display: flex;
