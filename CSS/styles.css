@@ -20,9 +20,6 @@ header {
     padding: 25px 25px;
     color: black;
     font-weight: bold;
-   
-
-
 }
 
 
@@ -74,6 +71,7 @@ nav ul {
 
 }
 
+
 nav ul li {
     cursor: pointer;
     display: block;
@@ -85,6 +83,8 @@ nav ul li {
 nav ul li:hover {
     box-shadow: inset 0px -3px 0 0 black;
 }
+
+
 
 /* ჰედერის ელემენტებზე დაწკაპების შემდგომ ფერი */
 nav ul li:active {
