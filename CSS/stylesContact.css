@@ -5,6 +5,7 @@
     background-color:  #685a50;
     box-shadow: inset 15px 15px 15px rgb(25, 33, 25), inset -15px -15px 15px rgb(25, 33, 25 );
     border-radius: 5px;
+    padding-top: 15px;
 
 }
 
@@ -15,7 +16,7 @@
 header {
     max-width: 1440px;
     width: 100%;
-    max-height: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,11 +24,10 @@ header {
     padding: 25px 25px;
     color: black;
     font-weight: bold;
-    z-index: 5;
+    z-index: 4;
     position: fixed;
     background-color: #685a50;
     top: 0;
-    bottom: 0;
     box-shadow: inset 1px  10px 5px rgb(25 33 25), inset -1px  -3px 5px rgb(25 33 25);
 }
 
@@ -120,7 +120,7 @@ nav ul li:active {
 /* ------------- section 1 --------------- */
 
 .section1 {
-
+    margin: 60px auto 0;
     width: 80%;
     height: 500px;
     border-radius: 5px;
@@ -128,7 +128,6 @@ nav ul li:active {
     align-items: center;
     display: flex;
     background-color:  #5a4e46;
-    margin: 0 auto;
    
 }
 
