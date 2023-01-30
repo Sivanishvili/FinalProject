@@ -22,9 +22,6 @@ header {
     padding: 25px 25px;
     color: black;
     font-weight: bold;
-    margin-bottom: 30px;
-    box-shadow: 1px 3px 30px -3px  #544d4d;
-
 }
 
 
@@ -36,31 +33,25 @@ header {
     animation: beat 2s linear infinite;
 
 }
-
 @keyframes beat {
-    from {
+    from{
         transform: scale(1);
         transform-origin: center center;
         animation-timing-function: ease-in-out;
     }
-
-    15% {
-        transform: scale(1.1);
+    15%{ transform: scale(1.1);
         animation-timing-function: ease-in;
 
     }
-
-    30% {
+    30%{
         transform: scale(1);
         animation-timing-function: ease-out;
     }
-
-    55% {
+    55%{
         transform: scale(1.05);
         animation-timing-function: ease-in;
     }
-
-    75% {
+    75%{
         transform: scale(1);
         animation-timing-function: ease-out;
     }
@@ -82,6 +73,7 @@ nav ul {
 
 }
 
+
 nav ul li {
     cursor: pointer;
     display: block;
@@ -95,9 +87,27 @@ nav ul li:hover {
 }
 
 
+
+/* ჰედერის ელემენტებზე დაწკაპების შემდგომ ფერი */
 nav ul li:active {
-    background-color:  #7e6b5e;
+    background-color: rgb(8, 107, 74);
 }
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
 
 
 /* ------------- section 1 --------------- */

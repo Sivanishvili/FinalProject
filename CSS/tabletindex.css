@@ -47,6 +47,14 @@ nav ul {
 
 
 
+.line{
+
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+
+
 /* ---------- articlee ----------- */
 .card{
     width: 46%;
@@ -88,6 +96,11 @@ nav ul {
 .card2 img{
     width: 100%;
 }
+
+.gaqroba1{
+    display: none;
+}
+
 
 /* ----------- footer ---------- */
 
