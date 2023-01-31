@@ -40,8 +40,7 @@ header {
 @keyframes beat {
     from{
         transform: scale(1);
-        transform-origin: center center;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-out;
     }
     15%{ transform: scale(1.1);
         animation-timing-function: ease-in;
@@ -93,7 +92,7 @@ nav ul li:hover {
 
 /* ჰედერის ელემენტებზე დაწკაპების შემდგომ ფერი */
 nav ul li:active {
-    background-color: rgb(8, 107, 74);
+    background-color: rgb(6, 92, 63);
 }
 
 .hamburger{
@@ -106,7 +105,6 @@ nav ul li:active {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
 }

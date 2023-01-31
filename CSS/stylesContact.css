@@ -2,8 +2,8 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-color:  #685a50;
-    box-shadow: inset 15px 15px 15px rgb(25, 33, 25), inset -15px -15px 15px rgb(25, 33, 25 );
+    background-color: #685a50;
+    box-shadow: inset 15px 15px 15px rgb(25, 33, 25), inset -15px -15px 15px rgb(25, 33, 25);
     border-radius: 5px;
     padding-top: 15px;
 
@@ -28,7 +28,7 @@ header {
     position: fixed;
     background-color: #685a50;
     top: 0;
-    box-shadow: inset 1px  10px 5px rgb(25 33 25), inset -1px  -3px 5px rgb(25 33 25);
+    box-shadow: inset 1px 10px 5px rgb(25 33 25), inset -1px -3px 5px rgb(25 33 25);
 }
 
 
@@ -40,25 +40,30 @@ header {
     animation: beat 2s linear infinite;
 
 }
-@keyframes beat {
-    from{
-        transform: scale(1);
-        transform-origin: center center;
-        animation-timing-function: ease-in-out;
-    }
-    15%{ transform: scale(1.1);
-        animation-timing-function: ease-in;
 
-    }
-    30%{
+@keyframes beat {
+    from {
         transform: scale(1);
         animation-timing-function: ease-out;
     }
-    55%{
+
+    15% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in;
+
+    }
+
+    30% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    55% {
         transform: scale(1.05);
         animation-timing-function: ease-in;
     }
-    75%{
+
+    75% {
         transform: scale(1);
         animation-timing-function: ease-out;
     }
@@ -100,17 +105,16 @@ nav ul li:active {
     background-color: rgb(72, 73, 73);
 }
 
-.hamburger{
+.hamburger {
     display: none;
     cursor: pointer;
 }
 
-.bar{
+.bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
@@ -127,8 +131,8 @@ nav ul li:active {
     /* border: 3px solid blue; */
     align-items: center;
     display: flex;
-    background-color:  #5a4e46;
-   
+    background-color: #5a4e46;
+
 }
 
 .sectionitems {
@@ -159,7 +163,7 @@ nav ul li:active {
 
 
 
-form{
+form {
     /* border: 2px solid green; */
     height: 280px;
     width: 30%;
@@ -167,14 +171,14 @@ form{
 
 }
 
-.forms{
+.forms {
     flex-wrap: wrap;
     /* border: 2px solid black; */
     height: 75px;
     margin: 25px 10px 30px 10px;
 }
 
-.forms p{
+.forms p {
     padding-bottom: 10px;
     color: rgb(209, 199, 199);
     font-size: 20px;
@@ -182,13 +186,13 @@ form{
 
 }
 
-.forms input{
+.forms input {
     width: 70%;
     height: 40PX;
     /* background-color: #9c7358; */
 }
 
-.forms button{
+.forms button {
     margin-top: 30px;
     background-color: rgb(88 96 100);
     width: 30%;
@@ -197,8 +201,8 @@ form{
 }
 
 
-.forms button:hover{
-    background-color:  #605247;
+.forms button:hover {
+    background-color: #605247;
 }
 
 
@@ -212,8 +216,8 @@ article {
     margin: 35px auto;
     color: rgb(209, 199, 199);
     margin-bottom: 35px;
-    border-top: 2px solid  #937e70;
-    border-bottom: 2px solid  #937e70;
+    border-top: 2px solid #937e70;
+    border-bottom: 2px solid #937e70;
 }
 
 
@@ -225,40 +229,39 @@ article {
     /* border: 3px solid black; */
 }
 
-.avatar{
+.avatar {
     padding: 10px 15px;
     /* border: 2px solid red; */
     height: 172px;
     width: 35%;
-    margin:20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
-.card-avatar h1{
+.card-avatar h1 {
     color: black;
     font-weight: bold;
     padding-top: 10px;
     font-size: 24px;
 }
-.card-avatar img{
+
+.card-avatar img {
     width: 15%;
     height: 15%;
 }
 
 
 .card {
-    margin:20px 0 20px 0;
+    margin: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
     padding: 10px 15px;
     /* border: 2px solid rgb(46, 26, 26); */
     height: 172px;
     width: 35%;
-    
+
 }
 
-.card-avatar img{
+.card-avatar img {
     width: 55px;
     height: 55px;
 }
@@ -273,7 +276,7 @@ article p {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     line-height: 17px;
-   
+
 }
 
 
@@ -282,29 +285,30 @@ article p {
 
 /* --------------- section 2 ------------------ */
 
-.section2{
-   margin: 0 auto;
-   width: 80%;
-   background-color:  #5a4e46;
+.section2 {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #5a4e46;
     height: 831px;
-border-radius: 7px;
-margin-bottom: 30px;
+    border-radius: 7px;
+    margin-bottom: 30px;
 }
 
 
-.sec2img{
+.sec2img {
     margin: 0 auto;
     width: 97%;
     /* border: 3px solid red; */
 }
-.section2 img{
+
+.section2 img {
     width: 100%;
     border-radius: 10px;
     margin-top: 20px;
-    
+
 }
 
-.section2text{
+.section2text {
     /* border: 3px solid red; */
     margin: 80px 20px 41px 20px;
     line-height: 20px;
@@ -312,10 +316,10 @@ margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
 
 
-  
+
 }
 
-.section2text div{
+.section2text div {
     margin-bottom: 30px;
 }
 
@@ -330,7 +334,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 0px 0px  #544d4d, 0px -3px 20px  #544d4d;
+    box-shadow: 0px 0px 0px #544d4d, 0px -3px 20px #544d4d;
 }
 
 .flogo {
@@ -358,5 +362,5 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-   
+
 }
